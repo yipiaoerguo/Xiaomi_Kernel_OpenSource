@@ -14,7 +14,7 @@ bool mt_get_uartlog_status(void);
 void mt_disable_uart(void);
 void mt_enable_uart(void);
 #else
-static inline bool mt_get_uartlog_status(void)
+inline bool mt_get_uartlog_status(void)
 {
 	return false;
 }
